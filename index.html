@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOE Restaurant - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fefefe;
+            color: #333;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #ff6347;
+            color: #fff;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1024x400/?restaurant') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .hero h1 {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #ff6347;
+            color: #fff;
+        }
+        @media (min-width: 768px) {
+            .content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JOE Restaurant</h1>
+        <p>fefreg</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Booking</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h1>Welcome to JOE</h1>
+    </section>
+    <section class="content">
+        <div>
+            <h2>Our Story</h2>
+            <p>Experience the best dining with classic recipes and vibrant atmosphere.</p>
+            <img src="https://source.unsplash.com/500x300/?dining" alt="Dining">
+        </div>
+        <div>
+            <h2>Specials</h2>
+            <p>Discover our daily specials crafted with love and fresh ingredients.</p>
+            <img src="https://source.unsplash.com/500x300/?food" alt="Food">
+        </div>
+        <div>
+            <h2>Book a Table</h2>
+            <p>Reserve your spot for a memorable dining experience.</p>
+            <button>Book Now</button>
+        </div>
+        <div>
+            <h2>Newsletter</h2>
+            <p>Stay updated with our latest offers and news.</p>
+            <button>Subscribe</button>
+        </div>
+        <div>
+            <h2>Follow Us</h2>
+            <p>Connect with us on social media.</p>
+            <div>
+                <a href="#" class="fab fa-facebook-square"></a>
+                <a href="#" class="fab fa-twitter-square"></a>
+                <a href="#" class="fab fa-instagram-square"></a>
+            </div>
+        </div>
+        <div>
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 JOE Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
